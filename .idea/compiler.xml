@@ -24,16 +24,16 @@
         <module name="zipkin-server-stream" />
         <module name="config-client" />
         <module name="ribbon-consumer" />
+        <module name="config-client-eureka-kafka" />
         <module name="config-server-eureka-rabbit" />
         <module name="hello-service" />
         <module name="config-server" />
         <module name="config-server-eureka-kafka" />
         <module name="config-server-eureka" />
         <module name="stream-producer" />
-        <module name="config-client-eureka-kafka" />
+        <module name="eureka-server" />
         <module name="api-gateway-dynamic-route" />
         <module name="zipkin-server" />
-        <module name="eureka-server" />
         <module name="hystrix-dashboard" />
         <module name="api-gateway-dynamic-filter" />
         <module name="turbine" />
@@ -53,7 +53,7 @@
       <module name="config-server-eureka" target="1.5" />
       <module name="config-server-eureka-kafka" target="1.5" />
       <module name="config-server-eureka-rabbit" target="1.5" />
-      <module name="eureka-server" target="1.5" />
+      <module name="eureka-server" target="1.8" />
       <module name="eureka-server-ha" target="1.5" />
       <module name="feign-consumer" target="1.5" />
       <module name="hello-service" target="1.5" />
