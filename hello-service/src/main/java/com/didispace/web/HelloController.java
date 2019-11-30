@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Random;
+
 @RestController
 public class HelloController {
 
@@ -24,9 +26,9 @@ public class HelloController {
         ServiceInstance instance = client.getLocalServiceInstance();
 
         // 测试超时触发断路器
-//		int sleepTime = new Random().nextInt(3000);
-//		logger.info("sleepTime:" + sleepTime);
-//		Thread.sleep(sleepTime);
+        int sleepTime = new Random().nextInt(3000);
+        logger.info("sleepTime:" + sleepTime);
+        Thread.sleep(sleepTime);
 
         logger.info("/hello, host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
         return "Hello World";
